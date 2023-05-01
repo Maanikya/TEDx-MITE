@@ -12,7 +12,7 @@ export const AboutUsContainer = styled.div`
     padding-top: 100px;
 
     @media screen and (max-width: 960px) {
-        margin-top: 800px;
+        margin-top: 820px;
         // padding: 100px 0px;
     }
 `;
