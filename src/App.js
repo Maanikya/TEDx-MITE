@@ -5,6 +5,7 @@ import Home from "./pages";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import AboutUs from "./components/AboutUs";
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
 
     return (
         <BrowserRouter>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+            {/* <Navbar toggle={toggle} /> */}
             <Home />
         </BrowserRouter>
     );
