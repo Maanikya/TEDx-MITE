@@ -1,13 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
-  return (
-    <HeroContainer id='home'>
-        <HeroBg>
-            {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
-        </HeroBg>
-    </HeroContainer>
-  )
+
+    const [hover, setHover] = useState(false);
+
+    const onHover = () => {
+        setHover(!hover);
+    }
+
+    return (
+        <HeroContainer id='home'>
+            <HeroContent>
+                <HeroH1>
+                    Ideas worth spreading.
+                </HeroH1>
+                <HeroP>
+                    Lorem ipsum siuuuuuu wewfwnfkwenvlkw wvpsnevpnvpn wvinswvik swdnvipksnvpon
+                </HeroP>
+                <HeroBtnWrapper>
+                    <Button to='/Register' onMouseEnter={onHover} onMouseLeave={onHover}>
+                        Register Now {hover ? <ArrowForward /> : <ArrowRight />}
+                    </Button>
+                </HeroBtnWrapper>
+            </HeroContent>
+        </HeroContainer>
+    )
 }
 
 export default HeroSection
