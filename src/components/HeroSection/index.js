@@ -20,7 +20,7 @@ const HeroSection = () => {
                     Lorem ipsum siuuuuuu wewfwnfkwenvlkw wvpsnevpnvpn wvinswvik swdnvipksnvpon
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='/Register' onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button to='/Register' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                         Register Now {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>

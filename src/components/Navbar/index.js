@@ -18,7 +18,9 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">TEDx MITE</NavLogo>
+                    <NavLogo to="/">
+                        <img src={require('../../images/Logo.jpg')} width={'250px'} height={'80px'} />
+                    </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
