@@ -1,11 +1,15 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Home from "./pages";
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>TEDx MITE</h1>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Home />
+        </BrowserRouter>
+    );
 }
 
 export default App;
