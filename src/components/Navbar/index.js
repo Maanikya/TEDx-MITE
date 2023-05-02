@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
     Nav,
@@ -13,35 +14,104 @@ import {
     NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = ({toggle}) => {
-
+const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeNav);
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                        <img src={require('../../images/Logo.jpg')} width={'250px'} height={'80px'} />
+                    <NavLogo to="/" onClick={toggleHome}>
+                        <img
+                            src={require("../../images/Logo.jpg")}
+                            width={"250px"}
+                            height={"80px"}
+                        />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="AboutUs">About Us</NavLinks>
+                            <NavLinks
+                                to="AboutUs"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                // activeClass="active"
+                            >
+                                About Us
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="PastEvents">Past Events</NavLinks>
+                            <NavLinks
+                                to="PastEvents"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-60}
+                                // activeClass="active"
+                            >
+                                Past Events
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Speakers">Speakers</NavLinks>
+                            <NavLinks
+                                to="Speakers"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                // activeClass="active"
+                            >
+                                Speakers
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Theme">Theme</NavLinks>
+                            <NavLinks
+                                to="Theme"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                // activeClass="active"
+                            >
+                                Theme
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Contact">Contact</NavLinks>
+                            <NavLinks
+                                to="Contact"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                // activeClass="active"
+                            >
+                                Contact
+                            </NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

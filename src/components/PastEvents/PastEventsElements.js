@@ -22,15 +22,15 @@ export const PastEventsContainer = styled.div`
 
 export const PastEventsWrapper = styled.div`
     max-width: 1000px;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 100px;
+    grid-gap: 80px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1080px) {
         grid-template-columns: 1fr 1fr;
     }
 

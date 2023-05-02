@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import AboutUs from '../components/AboutUs';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/AboutUs/Data';
 import PastEvents from '../components/PastEvents';
+import Footer from '../components/Footer';
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
             <HeroSection />
             <AboutUs {...homeObjOne} />
             <PastEvents />
+            <Footer />
             {/* <AboutUs {...homeObjTwo} />
             <AboutUs {...homeObjThree} /> */}
         </>
