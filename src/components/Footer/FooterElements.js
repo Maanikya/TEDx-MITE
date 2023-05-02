@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 export const FooterContainer = styled.footer`
     position: absolute;
     width: 100%;
-    top: 2220px;
-    // bottom: 0;
+    top: 2160px;
     background-color: #101522;
 
     @media screen and (max-width: 960px) {
@@ -13,7 +12,7 @@ export const FooterContainer = styled.footer`
     }
 
     @media screen and (max-width: 480px) {
-        top: 2800px;
+        top: 2900px;
     }
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PastEventsContainer = styled.div`
     position: absolute;
-    top: 1500px;
+    top: 1450px;
     height: 720px;
     width: 100%;
     display: flex;
@@ -12,6 +12,7 @@ export const PastEventsContainer = styled.div`
     background: #010606;
 
     @media screen and (max-width: 960px) {
+        top: 1600px;
         height: 1400px;
     }
 
