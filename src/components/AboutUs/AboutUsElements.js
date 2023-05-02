@@ -4,7 +4,7 @@ export const AboutUsContainer = styled.div`
     position: absolute;
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
-    margin-top: 720px;
+    top: 720px;
     width: 100%;
     height: 800px;
     margin-left: auto;
@@ -12,7 +12,7 @@ export const AboutUsContainer = styled.div`
     padding-top: 100px;
 
     @media screen and (max-width: 960px) {
-        margin-top: 820px;
+        // margin-top: 820px;
         // padding: 100px 0px;
     }
 `;

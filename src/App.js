@@ -6,6 +6,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import AboutUs from "./components/AboutUs";
+import { homeObjOne } from "./components/AboutUs/Data";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
             {/* <Navbar toggle={toggle} /> */}
             <Home />
+            {/* <AboutUs {...homeObjOne}/> */}
         </BrowserRouter>
     );
 }
