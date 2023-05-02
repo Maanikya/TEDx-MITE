@@ -1,6 +1,7 @@
-import React, {useState} from "react";
-import { BrowserRouter } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages";
+import Register from "./pages/Register";
 
 import "./App.css";
 
@@ -14,7 +15,11 @@ function App() {
 
     return (
         <BrowserRouter>
-            <Home />
+            <Routes>
+                {/* <Home /> */}
+                <Route path="/" element={<Home />} />
+                <Route path="/Register" element={<Register />} />
+            </Routes>
         </BrowserRouter>
     );
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ButtonElement';
+import ParticleBackground from '../Particles';
+
 
 const HeroSection = () => {
 
@@ -12,7 +14,11 @@ const HeroSection = () => {
 
     return (
         <HeroContainer id='home'>
+           
             <HeroContent>
+            {/* <HeroBg>
+                <ParticleBackground />
+            </HeroBg> */}
                 <HeroH1>
                     Ideas worth spreading.
                 </HeroH1>
