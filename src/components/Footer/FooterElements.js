@@ -11,6 +11,10 @@ export const FooterContainer = styled.footer`
     @media screen and (max-width: 960px) {
         top: 2900px;
     }
+
+    @media screen and (max-width: 480px) {
+        top: 2800px;
+    }
 `;
 
 export const FooterWrap = styled.div`
