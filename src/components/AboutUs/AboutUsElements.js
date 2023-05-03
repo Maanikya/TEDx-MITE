@@ -15,6 +15,10 @@ export const AboutUsContainer = styled.div`
         top: 840px;
         padding: 100px 0px;
     }
+
+    @media screen and (max-width: 480px) {
+        top: 630px;
+    }
 `;
 
 export const AboutUsWrapper = styled.div`
