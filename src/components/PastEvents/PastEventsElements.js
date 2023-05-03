@@ -17,6 +17,7 @@ export const PastEventsContainer = styled.div`
     }
 
     @media screen and (max-width: 480px) {
+        top: 1400px;
         height: 1300px;
     }
 `;
