@@ -5,14 +5,6 @@ export const FooterContainer = styled.footer`
     position: relative;
     width: 100%;
     background-color: #101522;
-
-    @media screen and (max-width: 960px) {
-        top: 2900px;
-    }
-
-    @media screen and (max-width: 480px) {
-        top: 2700px;
-    }
 `;
 
 export const FooterWrap = styled.div`

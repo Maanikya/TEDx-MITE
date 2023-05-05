@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ButtonElement';
 import { useCallback } from "react";
-import { Container, Engine, tsParticles } from "tsparticles-engine";
+import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import "./Hero.css";
