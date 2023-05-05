@@ -1,5 +1,4 @@
 import React from "react";
-import ParticleBackground from "../components/Particles";
 
 const Register = () => {
     return (

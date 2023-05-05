@@ -1,24 +1,19 @@
 import styled from "styled-components";
 
 export const AboutUsContainer = styled.div`
-    position: absolute;
+    position: relative;
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
-    top: 720px;
     width: 100%;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    // padding-top: 100px;
 
     @media screen and (max-width: 960px) {
-        top: 840px;
         padding: 100px 0px;
     }
 
-    @media screen and (max-width: 480px) {
-        top: 630px;
-    }
 `;
 
 export const AboutUsWrapper = styled.div`

@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 2160px;
     background-color: #101522;
 
     @media screen and (max-width: 960px) {

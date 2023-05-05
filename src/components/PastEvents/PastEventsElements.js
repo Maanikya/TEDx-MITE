@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const PastEventsContainer = styled.div`
-    position: absolute;
-    top: 1450px;
-    height: 720px;
+    position: relative;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,12 +11,11 @@ export const PastEventsContainer = styled.div`
     background: #010606;
 
     @media screen and (max-width: 960px) {
-        top: 1600px;
         height: 1400px;
     }
 
     @media screen and (max-width: 480px) {
-        top: 1400px;
+        // top: 1400px;
         height: 1300px;
     }
 `;

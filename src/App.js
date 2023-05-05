@@ -8,12 +8,6 @@ import "./App.css";
 
 function App() {
 
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    }
-
     return (
         <BrowserRouter>
             <Routes>
