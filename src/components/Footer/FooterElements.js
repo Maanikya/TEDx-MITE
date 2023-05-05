@@ -12,7 +12,7 @@ export const FooterContainer = styled.footer`
     }
 
     @media screen and (max-width: 480px) {
-        top: 2900px;
+        top: 2700px;
     }
 `;
 

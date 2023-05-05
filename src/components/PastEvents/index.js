@@ -24,6 +24,16 @@ const PastEvents = () => {
                     <PastEventsH2>Event 3</PastEventsH2>
                     <PastEventsP>Laasdaa</PastEventsP>
                 </PastEventsCard>
+                {/* <PastEventsCard>
+                    <PastEventsIcon src={Icon3} />
+                    <PastEventsH2>Event 3</PastEventsH2>
+                    <PastEventsP>Laasdaa</PastEventsP>
+                </PastEventsCard>
+                <PastEventsCard>
+                    <PastEventsIcon src={Icon3} />
+                    <PastEventsH2>Event 3</PastEventsH2>
+                    <PastEventsP>Laasdaa</PastEventsP>
+                </PastEventsCard> */}
             </PastEventsWrapper>
         </PastEventsContainer>
     )
